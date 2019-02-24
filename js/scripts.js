@@ -6,10 +6,10 @@ var navigate = (function() {
     $('.' + dataName).toggle();
   });
 })();
-/*
+
 // target the style element, in which to include the CSS property value pairs and the card, to be styled accordingly
-const style = document.querySelector(".code pre style");
-const card = document.querySelector(".card");
+/*const style = document.querySelector(".code pre style");
+/*const card = document.querySelector(".card");
 
 // include the script, including both comments and property value pairs making up the animation
 script = `
