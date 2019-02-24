@@ -11,9 +11,9 @@ var navigate = (function() {
 const style = document.querySelector(".code pre style");
 const card = document.querySelector(".card");
 
-/*// include the script, including both comments and property value pairs making up the animation
-script = `
-/* Let us style this page a bit first */
+// include the script, including both comments and property value pairs making up the animation
+/*script = `
+//* Let us style this page a bit first */
 /** {
   box-sizing: border-box;
   margin: 0;
