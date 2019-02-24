@@ -9,9 +9,9 @@ var navigate = (function() {
 
 // target the style element, in which to include the CSS property value pairs and the card, to be styled accordingly
 const style = document.querySelector(".code pre style");
-/*const card = document.querySelector(".card");
+const card = document.querySelector(".card");
 
-// include the script, including both comments and property value pairs making up the animation
+/*// include the script, including both comments and property value pairs making up the animation
 script = `
 /* Let us style this page a bit first */
 /** {
