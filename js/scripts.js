@@ -12,9 +12,9 @@ const style = document.querySelector(".code pre style");
 const card = document.querySelector(".card");
 
 // include the script, including both comments and property value pairs making up the animation
-/*script = `
-//* Let us style this page a bit first */
-/** {
+script = `
+/* Let us style this page a bit first */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ const card = document.querySelector(".card");
 }
 
 /* A bit of proper layout then */
-/*.container {
+.container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,7 +63,7 @@ detailing
   * which values the element should assume
   (in relation to those set in the animation)
 */
-/*
+
 .card {
   animation: rollUp 4s 1s infinite cubic-bezier(.22,-.3,.68,1.44) both;
 }
@@ -72,7 +72,7 @@ detailing
   * with the **keyframes** keyword
   * specifying property-value pairs at different intervals
 */
-/*@keyframes rollUp {
+@keyframes rollUp {
   0% {
     opacity: 0;
     transform: translateY(-50vh);
@@ -87,7 +87,7 @@ detailing
 }
 
 /* That's all it takes */
-/*.card {
+.card {
   position: relative;
 }
 .card:before {
@@ -111,7 +111,7 @@ let intervalID = setInterval(() => {
   style.textContent = script.substring(0, counter);
   // keep the focus of the style tags to the bottom of the element
   style.scrollTop = style.scrollHeight;
-  if(counter > script.length) {
+  if (counter > script.length) {
     clearInterval(intervalID);
   }
 }, 30);
